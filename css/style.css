@@ -1,0 +1,48 @@
+/****************************************************************************************************************************************/
+/*** Lista Pokemon								*/
+/*** Autor					: Iury Amorim		*/
+/*** Data de Criação		: 13/10/2015		*/
+/*** Data de Modificação	: 19/10/2015		*/
+/************************************************/
+@charset "UTF-8";
+@font-face 																{ font-family: PokemonSolid; src: url('../font/PokemonSolid.ttf'); }
+
+body,html																{ margin:  0; padding: 0; font-size:18px; }
+body 																	{ background-color:#000;margin-top: -25px; }
+
+header																	{ border-bottom: solid 10px #fff; margin-bottom:10px;  position: relative;	}
+header h1																{ height: 120px; margin-top: 10px; margin-bottom: 0; font-family: "PokemonSolid"; color:red; font-size:50px; text-align: center; }
+header h1 span 															{ color:yellow; }
+header img 																{ position: absolute; left:400px; top:25px; }
+
+.div-main																{ display:block;width: 960px; color: #444; margin: 0 auto; font-family:sans-serif; }
+.div-main .div-body  													{ display: inline-block;position:relative; }
+.div-main .div-body aside 												{ width: 320px;float:left; }
+.div-main .div-body aside h2											{ font-size: 22px; color: red; font-family: "PokemonSolid"; margin-top: 0; margin-bottom: 10px; }
+.div-main .div-body aside input[list] 									{ margin-bottom: 10px; border-radius: 8px; }
+.div-main .div-body aside input[type="button"] 							{ border: none;background-color: transparent; color: red; font-size: 15px; }
+.div-main .div-body aside select 										{ width: 173px;height: 360px; text-transform: capitalize; }
+.div-main .div-body aside select option:nth-child(even) 				{ background-color: #fff; }
+.div-main .div-body aside select option:nth-child(odd) 					{ background-color: #dcdcdc;}
+.div-main .div-body aside select option:hover 							{ background-color: #00114c; color:#fff; }
+.div-main .div-body section 											{ width: 630px;float:right;  }
+.div-main .div-body section table tr td									{ margin-top: 15px; }
+.div-main .div-body section table tr td									{ width: 170px; }
+.div-main .div-body section table tr td p 								{ color: #fff; }
+.div-main .div-body section table tr td label 							{ color: yellow; }
+.div-main .div-body section table tr td textarea 						{ width: 400px;height: 100px; background-color: #00114c;border: none; color: #fff; }
+.div-main .div-body section table tr td input[type="text"]				{ width: 200px; background-color: #00114c;border: none; color: #fff; }
+.div-main .div-body section table tr td input[type="email"] 			{ width: 170px; background-color: #00114c;border: none; color: #fff; }
+.div-main .div-body section table tr td input[type="submit"] 			{ background-color: #00114c; color:yellow; border-radius: 5px; border: none; font-size: 14px; color: #fff; }
+.div-main .div-body section table tr td .div-inblock-n 					{ background-color: #00114c; width: 340px; height: 60px;  vertical-align:middle; text-align: center; display: table-cell; text-transform: capitalize; }
+.div-main .div-body section table tr td .div-inblock-a 					{ background-color: #00114c; width: 80px; height: 60px; vertical-align:middle; text-align: center; display: table-cell; }
+.div-main .div-body section table tr td .div-inblock-d 					{ background-color: #00114c; width: 450px;vertical-align:middle; display: table-cell; padding: 0 10px; }
+.div-main .div-body section table .div-commentary .div-inblock-c 		{ background-color: #00114c; width: 450px;vertical-align:middle; display: table-cell; padding: 0 10px; }
+.div-main .div-body section table .div-commentary .div-inblock-c p		{ color: #B8860B;text-transform: capitalize;margin-bottom: 0;}
+.div-main .div-body section table .div-commentary .div-inblock-c pre	{ color: #fff;margin-top: 0; }
+
+footer																	{ text-align: center;padding: 20px 0; position: relative; width: 100%; display: inline-block; background-color: #fff; }
+footer a 																{ color:#000; text-decoration: none; font-style: italic; font-size: 14px; }
+footer .hr-l 															{ width: 430px;  float: left; top:22px; }
+footer .hr-r 															{ width: 430px;  float: right; top:22px; }
+/****************************************************************************************************************************************/

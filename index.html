@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Pokemon</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/functions.js" defer></script>
+</head>
+<body id="jqBodyPokemon">
+	<div class="div-main">
+		<header>
+			<img width="40" height="40" src="img/pokebola.png" alt="pokebola" />
+			<h1>Web <span>Pokédex</span></h1>
+		</header>
+		<div class="div-body">
+			<aside>
+				<h2>Explorar Pokémons</h2>
+				<input list="jqDatalist" id="jqList" />
+				<datalist id="jqDatalist"></datalist >
+				<input type="button" id="jqBtnBuscar" value="Buscar" />
+				<select id="jqSelect" size="30"></select>
+			</aside>
+			<section>
+				<article>
+					<input type="hidden" id="jqID" />
+					<form>
+						<table>
+							<tbody>
+								<tr>
+									<td colspan="2">
+										<label>Nome: </label>
+										<div class="div-inblock-n">
+											<p id="jqName"></p>
+										</div>
+									</td>
+									<td colspan="2" rowspan="2">
+										<img id="jqSprite" width="200" height="200" src="img/interrogacao.jpg" alt="interrogacao" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Ataque: </label>
+										<div class="div-inblock-a">
+											<p id="jqAttack"></p>
+										</div>
+									</td>
+									<td>
+										<label>Defesa: </label>
+										<div class="div-inblock-a">
+											<p id="jqDefense"></p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">								
+										<label>Descrição: </label>
+										<div class="div-inblock-d">
+											<p id="jqDescriptions"></p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<label>Comentarios:</label>
+									</td>
+								</tr>
+							</tbody>
+							<tbody id="jqBlockCommentary" class="div-commentary"></tbody>
+							<tbody>
+								<tr>
+									<td colspan="2">
+										<label>Nome:</label>
+										<br/>
+										<input type="text" id="jqUserName" placeholder="Nome" required />
+									</td>
+									<td colspan="2">
+										<label>Email:</label>
+										<br/>
+										<input type="email" id="jqEmail" placeholder="Email" required />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<textarea id="jqInputComment" placeholder="Comentário" required ></textarea>				
+										<input type="submit" value="Enviar"/>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</article>
+			</section>
+		</div>
+		<footer>
+			<hr class="hr-l" />
+			<a href="https://www.facebook.com/iuryamorim1">Iury Amorim ©</a>
+			<hr class="hr-r" />
+		</footer>
+	</div>
+</body>
+</html>
